@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet">
+    <title>Remote Jobs</title>
+</head>
+<body>
+    <header>
+        <h1>Remote Jobs</h1>
+        <h2>
+            {{length}} {{language}} jobs found
+        </h2>
+        <a href = "/export?language={{language}}">export to csv</a>
+        <p></p>
+        <a href="/">Go back</a>
+    </header>
+    <main>
+        {% for job in jobs %}
+        <div class = "job_box">    
+            <p class = "position"><strong>{{job[1]}}</strong></p>
+            <p class = "company">{{job[0]}}</p>
+            <a class = "link_a" href = {{job[2]}}>Apply</a>
+        </div>
+        {% endfor %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+#btn {
+  background-color: #0993ff;
+  color: white;
+  display: block;
+  margin-top:20px;
+  margin-left: 0px;
+  width: 140px;
+  height: 60px;
+  font-size: 20px;
+  padding: 1px;
+  background-clip: content-box;
+  border-color: #69a6e2;
+  border-radius: 8px;
+}
+
+#content {
+  position: relative;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px gray;
+}
+
+h1{
+  position: relative;
+  left: 50%;
+}
+
+.link_a{
+  color: purple;
+  text-decoration: none;
+}
+
+.position{
+
+}
+
+.company{
+
+}
+
+.job_box{
+
+}
